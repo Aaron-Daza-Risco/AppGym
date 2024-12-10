@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './componentes/Layout/Navbar'
 import Home from './pages/Home'
 import Profile from './pages/Profile'
@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <div style={{ paddingTop: '64px' }}>
         <Routes>
@@ -18,7 +18,7 @@ function App() {
           <Route path="/add-workout" element={<AddWorkout />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
